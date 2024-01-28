@@ -1,13 +1,15 @@
-import { useContext } from "react";
-import Dados, { Context } from "../dados/dados";
+import { useContext } from "react"
+import { Context } from "../dados/dados"
+
 
 export default function Home(){
 
-    const { user } = useContext(Context)
+    const user = useContext(Context)
+    console.log(user)
 
     return(
-        <Dados>
-            <h1>Olá {user}</h1>
-        </Dados>
+        <h1>Olá { user }</h1>
     )
+
+
 }
